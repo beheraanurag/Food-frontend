@@ -1,0 +1,62 @@
+.WhatOurCustomer-main {
+  width: 100%;
+  padding: 50px 7%;
+}
+.WhatOurCustomer-main .heading {
+  text-align: center;
+  font-size: 2.5rem;
+}
+.WhatOurCustomer-main .Card-main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.Card-main .Card {
+  width: 30%;
+  height: 100%;
+  background-color: aliceblue;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 9px;
+}
+.Card .Card-heading {
+  font-size: 1.3rem;
+}
+.Card .Card-para {
+  font-size: 1rem;
+}
+.Card .Profile-div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.Profile-div .image-div {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.image-div .Image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+}
+.details .name {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+@media (max-width: 576px) {
+  .WhatOurCustomer-main .Card-main {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .Card-main .Card {
+    width: 100%;
+  }
+}

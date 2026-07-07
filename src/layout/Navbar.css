@@ -1,0 +1,247 @@
+.Navbar {
+    width: 100%;
+    min-height: 76px;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 7%;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.96);
+    border-bottom: 1px solid rgba(16, 24, 40, 0.08);
+    box-shadow: 0 8px 24px rgba(16, 24, 40, 0.08);
+    backdrop-filter: blur(12px);
+}
+
+.Navbar .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #161616;
+    flex-shrink: 0;
+}
+
+.nav-left .foodlogo {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.nav-left .heading {
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 1;
+    color: #161616;
+    margin: 0;
+}
+
+/* ************Left-end********** */
+
+
+/* ***********Middle-start******* */
+
+.Navbar .nav-middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 0 24px;
+}
+
+.Navbar .nav-middle a {
+    text-decoration: none;
+    color: #2b2b2b;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 14px;
+    border-radius: 7px;
+    transition: color 0.2s ease, background-color 0.2s ease;
+    white-space: nowrap;
+}
+
+.Navbar .nav-middle a:hover {
+    color: #e83434;
+    background-color: rgba(232, 52, 52, 0.08);
+}
+
+/* ***********Right-start******* */
+
+.Navbar .nav-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.nav-right .book-btn,
+.Mobile-btn .book-btn {
+    background-color: #e83434;
+    border: none;
+    color: white;
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: 0 8px 18px rgba(232, 52, 52, 0.24);
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+    white-space: nowrap;
+}
+
+.nav-right .book-btn:hover,
+.Mobile-btn .book-btn:hover {
+    background-color: #cf2626;
+    transform: translateY(-1px);
+    box-shadow: 0 10px 22px rgba(232, 52, 52, 0.3);
+}
+
+.nav-right .profile-btn {
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(16, 24, 40, 0.12);
+    border-radius: 50%;
+    background-color: #fff;
+    color: #252525;
+    cursor: pointer;
+    transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.nav-right .profile-btn:hover {
+    color: #e83434;
+    border-color: rgba(232, 52, 52, 0.35);
+    background-color: rgba(232, 52, 52, 0.06);
+}
+
+/* Mobile menu css */
+.Navbar .Mobile-menu {
+    position: absolute;
+    width: calc(100% - 32px);
+    padding: 18px;
+    background-color: #ffffff;
+    top: calc(100% + 10px);
+    left: 16px;
+    border: 1px solid rgba(16, 24, 40, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 18px 36px rgba(16, 24, 40, 0.16);
+}
+
+.Mobile-menu .mobile-menu-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.mobile-menu-icon a {
+    text-decoration: none;
+    color: #242424;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px;
+    border-radius: 7px;
+}
+
+.mobile-menu-icon a:hover {
+    color: #e83434;
+    background-color: rgba(232, 52, 52, 0.08);
+}
+
+.Mobile-menu .Mobile-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.Mobile-btn .book-btn,
+.Mobile-btn .book-btnn {
+    flex: 1;
+    min-height: 42px;
+    padding: 10px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.Mobile-btn .book-btnn {
+    background-color: #1f2937;
+    color: white;
+    font-weight: 700;
+}
+
+/* media qury Start Here */
+@media(max-width: 900px) {
+    .Navbar {
+        padding: 12px 5%;
+    }
+
+    .Navbar .nav-middle {
+        gap: 4px;
+        margin: 0 12px;
+    }
+
+    .Navbar .nav-middle a {
+        font-size: 15px;
+        padding: 9px 10px;
+    }
+
+    .nav-right .book-btn {
+        padding: 11px 14px;
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 720px) {
+    .Navbar .nav-middle,
+    .Navbar .nav-right {
+        display: none;
+    }
+}
+
+@media(max-width: 576px) {
+    .Navbar {
+        min-height: 68px;
+        padding: 10px 18px;
+    }
+
+    .nav-left .heading {
+        font-size: 19px;
+    }
+
+    .nav-left .foodlogo {
+        width: 44px;
+        height: 44px;
+    }
+
+    .Mobile-menu .Mobile-btn {
+        flex-direction: column;
+    }
+
+    .Mobile-btn .book-btn,
+    .Mobile-btn .book-btnn {
+        width: 100%;
+    }
+}
+
+.Navbar .menu-icon {
+    height: 100%;
+    display: none;
+    align-items: center;
+    cursor: pointer;
+    color: #1f2937;
+}
+
+@media(max-width: 720px) {
+    .Navbar .menu-icon {
+        display: flex;
+    }
+}

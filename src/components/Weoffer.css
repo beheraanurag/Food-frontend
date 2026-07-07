@@ -1,0 +1,85 @@
+.We-offer-main {
+    width: 100%;
+    height: 700px;
+    padding: 50px 7%;
+}
+
+.We-offer-main .heading {
+    font-size: 2.5rem;
+    font-style: italic;
+}
+
+.We-offer-main .Card-div {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.Card-div .Card {
+    width: 22%;
+    height: 100%;
+
+
+}
+
+.Card .img-div {
+    width: 100%;
+    height: 100%;
+
+}
+
+.img-div .imgae {
+    width: 100%;
+    height: 100%;
+
+}
+
+.Card .Tittle {
+    font-size: 1.5rem;
+    font-weight: 500;
+
+}
+
+@media (max-width:576px) {
+   
+.We-offer-main {
+    flex-direction: column;
+}
+
+.We-offer-main .heading {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.We-offer-main .Card-div {
+    width: 100%;
+    height: 300px;
+}
+
+.Card-div .Card {
+    width: 100%;
+    height: 100%;
+
+}
+
+.Card .img-div {
+    width: 100%;
+    height: 100%;
+
+}
+
+.img-div .imgae {
+    width: 100%;
+    height: 100%;
+
+}
+
+.Card .Tittle {
+    font-size: 1.5rem;
+    font-weight: 500;
+
+}
+
+}

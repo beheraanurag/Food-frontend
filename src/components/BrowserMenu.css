@@ -1,0 +1,73 @@
+.Browser-Menu-div {
+    width: 100%;
+    padding: 50px 7%;
+}
+
+.Browser-Menu-div .Heading {
+    text-align: center;
+    font-size: 3rem;
+    font-style: italic;
+
+}
+
+.Browser-Menu-div .card-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.card-div .card {
+    width: 22%;
+    height: 100%;
+    border: 1px solid rgb(92, 90, 90);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 2%;
+    border-radius: 7px;
+}
+
+.card .round {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.round img {
+    width: 70%;
+}
+
+.card .card-para {
+    font-size: 1.1rem;
+    text-align: center;
+
+}
+
+.card .card-btn {
+    padding: 0.5rem 1.5rem;
+    font-size: 1.1rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: red;
+}
+@media (max-width:576px) {
+    
+.Browser-Menu-div .card-div {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-div .card {
+    width: 100%;
+}
+
+}
