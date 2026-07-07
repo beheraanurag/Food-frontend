@@ -9,7 +9,7 @@ const OurFoods = () => {
   const getAllFoods = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:8000/api/food/all"
+        "https://food-backend-gf5l.onrender.com/api/food/all"
       );
 
       setFoods(response.data.foods);

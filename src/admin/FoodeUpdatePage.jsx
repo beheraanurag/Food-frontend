@@ -83,7 +83,7 @@ const FoodUpdatePage = () => {
       }
 
       const response = await axios.put(
-        `http://localhost:8000/api/food/update/${id}`,
+        `https://food-backend-gf5l.onrender.com/api/food/update/${id}`,
         data,
         {
           withCredentials: true,

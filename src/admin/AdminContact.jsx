@@ -41,7 +41,7 @@ const AdminContact = () => {
 
     try {
       const response = await axios.delete(
-        `http://localhost:8000/api/contact/delete/${id}`,
+        `https://food-backend-gf5l.onrender.com/api/contact/delete/${id}`,
         {
           withCredentials: true,
         }

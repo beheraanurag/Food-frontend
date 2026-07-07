@@ -26,7 +26,7 @@ function ContactPage() {
       setLoading(true);
 
       const response = await axios.post(
-        "http://localhost:8000/api/contact/create",
+        "https://food-backend-gf5l.onrender.com/api/contact/create",
         formData
       );
 

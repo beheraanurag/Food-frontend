@@ -8,7 +8,7 @@ const Table = () => {
   const getAllTables = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:8000/api/table/all"
+        "https://food-backend-gf5l.onrender.com/api/table/all"
       );
 
       setTables(response.data.tables);

@@ -27,7 +27,7 @@ const Booktable = () => {
       setLoading(true);
 
       const response = await axios.post(
-        "http://localhost:8000/api/table/create",
+        "https://food-backend-gf5l.onrender.com/api/table/create",
         formData
       );
 

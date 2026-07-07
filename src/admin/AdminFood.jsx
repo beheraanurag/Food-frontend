@@ -12,7 +12,7 @@ const AdminFood = () => {
     const getAllFoods = async () => {
         try {
             const response = await axios.get(
-                "http://localhost:8000/api/food/all",
+                "https://food-backend-gf5l.onrender.com/api/food/all",
                 {
                     withCredentials: true,
                 }
@@ -33,7 +33,7 @@ const AdminFood = () => {
 
     const handelDeleteFood = async (id) => {
         try {
-            const response = await axios.delete(`http://localhost:8000/api/food/delete/${id}`, { withCredentials: true })
+            const response = await axios.delete(`https://food-backend-gf5l.onrender.com/api/food/delete/${id}`, { withCredentials: true })
             alert(response.data.message)
             getAllFoods();
 
