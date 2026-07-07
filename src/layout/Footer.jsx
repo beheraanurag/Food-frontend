@@ -1,6 +1,6 @@
 import "./Footer.css"
 import LOGO from "../assets/fooodlogo.png"
-import MOMENT from "../assets/MOMENT.jpg"
+import MOMENT from "../assets/moment.jpg"
 import { FaTwitter } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";

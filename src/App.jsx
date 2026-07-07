@@ -41,7 +41,6 @@ function Layout() {
           <Route path="/details/:id" element={<FoodDetailsPage />} />
           <Route path="/order-sucess" element={<OrderSucess />} />
 
-
           <Route path="/admin" element={<ProtectedRoutes />}>
             <Route path="" element={<AdminPanel />}>
               <Route
